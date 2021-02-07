@@ -1,0 +1,106 @@
+
+.tui-card.data-v-6cf60feb {
+	margin: 0 30rpx;
+	font-size: 28rpx;
+	background-color: #fff;
+	border-radius: 10rpx;
+	box-shadow: 0 0 10rpx #eee;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.tui-card-full.data-v-6cf60feb {
+	margin: 0 !important;
+	border-radius: 0 !important;
+}
+.tui-card-full.data-v-6cf60feb::after {
+	border-radius: 0 !important;
+}
+.tui-card-border.data-v-6cf60feb {
+	position: relative;
+	box-shadow: none !important
+}
+.tui-card-border.data-v-6cf60feb::after {
+	content: ' ';
+	position: absolute;
+	height: 200%;
+	width: 200%;
+	border: 1px solid #ddd;
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	left: 0;
+	top: 0;
+	border-radius: 20rpx;
+	box-sizing: border-box;
+	pointer-events: none;
+}
+.tui-card-header.data-v-6cf60feb {
+	width: 100%;
+	padding: 20rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-top-left-radius: 10rpx;
+	border-top-right-radius: 10rpx;
+}
+.tui-card-header.data-v-6cf60feb::after {
+	content: '';
+	position: absolute;
+	border-bottom: 1rpx solid #eaeef1;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	bottom: 0;
+	right: 0;
+	left: 0;
+	pointer-events: none;
+}
+.tui-header-line.data-v-6cf60feb::after {
+	border-bottom: 0 !important;
+}
+.tui-header-thumb.data-v-6cf60feb {
+	height: 60rpx;
+	width: 60rpx;
+	vertical-align: middle;
+	margin-right: 20rpx;
+	border-radius: 6rpx;
+}
+.tui-thumb-circle.data-v-6cf60feb {
+	border-radius: 50% !important;
+}
+.tui-header-title.data-v-6cf60feb {
+	display: inline-block;
+	font-size: 30rpx;
+	color: #7a7a7a;
+	vertical-align: middle;
+	max-width: 460rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.tui-header-right.data-v-6cf60feb {
+	font-size: 24rpx;
+	color: #b2b2b2;
+}
+.tui-card-body.data-v-6cf60feb {
+	font-size: 32rpx;
+	color: #262b3a;
+	box-sizing: border-box;
+}
+.tui-card-footer.data-v-6cf60feb {
+	font-size: 28rpx;
+	color: #596d96;
+	border-bottom-left-radius: 10rpx;
+	border-bottom-right-radius: 10rpx;
+	box-sizing: border-box;
+}
+

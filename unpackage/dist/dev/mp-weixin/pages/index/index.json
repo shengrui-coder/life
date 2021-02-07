@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "uni-card": "/components/uni-card/uni-card",
+    "tui-divider": "/components/thorui-uni/lib/thorui/tui-divider/tui-divider"
+  }
+}

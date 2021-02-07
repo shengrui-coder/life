@@ -1,0 +1,27 @@
+{
+  "name": "thorui-uni",
+  "version": "1.6.0",
+  "description": "ThorUI Component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "thorui-uni"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingyong0214/ThorUI-uniapp.git"
+  },
+  "keywords": [
+    "thorui",
+	"thorui组件库",
+	"uni-app component"
+  ],
+  "author": {
+    "name": "echo.",
+    "email": "1062884167@qq.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingyong0214/ThorUI-uniapp/issues"
+  },
+  "homepage": "https://github.com/dingyong0214/ThorUI-uniapp#readme"
+}

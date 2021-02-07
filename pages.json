@@ -1,0 +1,47 @@
+{
+	"pages": [{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/life/index"
+		},
+		{
+			"path": "pages/record/index"
+		},
+		{
+			"path": "pages/me/index",
+			"style":{
+				"backgroundColor":"#F5F5F5"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#FFFFFF",
+		"backgroundColor": "#FFB6C1",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "/static/duilian.png",
+			"selectedIconPath": "/static/daofu.png",
+			"text": "新"
+		}, {
+			"pagePath": "pages/life/index",
+			"iconPath": "/static/china.png",
+			"selectedIconPath": "/static/fan.png",
+			"text": "年"
+		}, {
+			"pagePath": "pages/record/index",
+			"iconPath": "/static/paozhang.png",
+			"selectedIconPath": "/static/2021.png",
+			"text": "快"
+		}, {
+			"pagePath": "pages/me/index",
+			"iconPath": "/static/hat.png",
+			"selectedIconPath": "/static/egg.png",
+			"text": "乐"
+		}]
+	}
+}

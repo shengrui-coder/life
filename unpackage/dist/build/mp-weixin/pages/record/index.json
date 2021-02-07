@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "batch-upload": "/x-components/BatchUpload",
+    "tui-list-view": "/components/thorui-uni/lib/thorui/tui-list-view/tui-list-view",
+    "tui-list-cell": "/components/thorui-uni/lib/thorui/tui-list-cell/tui-list-cell",
+    "tui-tag": "/components/thorui-uni/lib/thorui/tui-tag/tui-tag",
+    "tui-icon": "/components/thorui-uni/lib/thorui/tui-icon/tui-icon",
+    "tui-button": "/components/thorui-uni/lib/thorui/tui-button/tui-button",
+    "tui-calendar": "/components/thorui-uni/lib/thorui/tui-calendar/tui-calendar",
+    "tui-toast": "/components/thorui-uni/lib/thorui/tui-toast/tui-toast",
+    "tui-loading": "/components/thorui-uni/lib/thorui/tui-loading/tui-loading"
+  }
+}
