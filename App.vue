@@ -14,4 +14,7 @@ export default {
 
 <style>
 /*每个页面公共css */
+.me{
+	background-color: #F5F5F5;
+}
 </style>

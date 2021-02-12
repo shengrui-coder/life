@@ -1,14 +1,14 @@
 <template>
-	<view class="container">
+	<view class="me">
 		<view class="status_bar"><!-- 这里是状态栏 --></view>
 		<view class="card">
 			<image class="avatar" mode="aspectFit" :src="'http://upload.tanyang.asia/avatar.jpg'"></image>
 			<view class="title">JasonTan</view>
 		</view>
-			<tui-list-cell class="settings" arrow @click="settings">
-				<tui-icon name="setup" :size="20" color="#4dabeb"></tui-icon>
-				<view class="tip">设置</view>
-			</tui-list-cell>
+		<tui-list-cell class="settings" arrow @click="settings">
+			<tui-icon name="setup" :size="20" color="#4dabeb"></tui-icon>
+			<view class="tip">设置</view>
+		</tui-list-cell>
 	</view>
 </template>
 
@@ -39,32 +39,34 @@ export default {
 	background-color: #ffb6c1;
 }
 
-.card {
-	background-color: #ffb6c1;
-	.avatar {
-		border-radius: 50%;
-		width: 60px;
-		height: 60px;
-		margin: 10px;
+.me {
+	.card {
+		background-color: #ffb6c1;
+		.avatar {
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			margin: 15px;
+		}
+
+		.title {
+			display: inline;
+			position: absolute;
+			top: calc(var(--status-bar-height) * 2);
+			font-weight: bold;
+		}
 	}
 
-	.title {
-		display: inline;
-		position: absolute;
-		top: calc(var(--status-bar-height) * 2);
-		font-weight: bold;
+	.tip {
+		display: inline-block;
+		margin-left: 5px;
+		width: 80%;
+		word-wrap: break-word;
+		font-size: 16px;
 	}
-}
 
-.tip {
-	display: inline-block;
-	margin-left: 5px;
-	width: 80%;
-	word-wrap: break-word;
-	font-size: 16px;
-}
-
-.settings {
-	margin-top: 10px;
+	.settings {
+		margin-top: 10px;
+	}
 }
 </style>

@@ -29,29 +29,29 @@
   width: 100%;
   background-color: #ffb6c1;
 }
-.card.data-v-373b9194 {
+.me .card.data-v-373b9194 {
   background-color: #ffb6c1;
 }
-.card .avatar.data-v-373b9194 {
+.me .card .avatar.data-v-373b9194 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin: 10px;
+  margin: 15px;
 }
-.card .title.data-v-373b9194 {
+.me .card .title.data-v-373b9194 {
   display: inline;
   position: absolute;
   top: calc(25px * 2);
   font-weight: bold;
 }
-.tip.data-v-373b9194 {
+.me .tip.data-v-373b9194 {
   display: inline-block;
   margin-left: 5px;
   width: 80%;
   word-wrap: break-word;
   font-size: 16px;
 }
-.settings.data-v-373b9194 {
+.me .settings.data-v-373b9194 {
   margin-top: 10px;
 }
 

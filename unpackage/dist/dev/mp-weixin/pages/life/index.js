@@ -120,6 +120,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var l0 = _vm.__map(_vm.lifeList, function(item, index) {
+    var $orig = _vm.__get_orig(item)
+
+    var m0 = _vm.timeago(item.submitTime)
+    return {
+      $orig: $orig,
+      m0: m0
+    }
+  })
+
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        l0: l0
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -150,9 +168,116 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/Program/HBuilderProjects/tanyang/pages/life/index.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js):\nSyntaxError: Unexpected token, expected \",\" (24:3)\n    at Object._raise (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:746:17)\n    at Object.raiseWithData (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:739:17)\n    at Object.raise (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:733:17)\n    at Object.unexpected (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:8807:16)\n    at Object.expect (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:8793:28)\n    at Object.parseObj (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10439:14)\n    at Object.parseExprAtom (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:10055:28)\n    at Object.parseExprSubscripts (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9656:23)\n    at Object.parseMaybeUnary (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9636:21)\n    at Object.parseMaybeUnary (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:6877:20)\n    at Object.parseExprOps (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9506:23)\n    at Object.parseMaybeConditional (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9479:23)\n    at Object.parseMaybeAssign (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:9434:21)\n    at Object.parseMaybeAssign (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:6822:20)\n    at Object.parseExportDefaultExpression (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:12358:24)\n    at Object.parseExportDefaultExpression (C:\\Users\\jason\\Downloads\\HBuilderX\\plugins\\uniapp-cli\\node_modules\\@babel\\parser\\lib\\index.js:6560:18)");
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uniCloud, uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tuiIcon = function tuiIcon() {__webpack_require__.e(/*! require.ensure | components/thorui-uni/lib/thorui/tui-icon/tui-icon */ "components/thorui-uni/lib/thorui/tui-icon/tui-icon").then((function () {return resolve(__webpack_require__(/*! ../../components/thorui-uni/lib/thorui/tui-icon/tui-icon */ 70));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tuiCard = function tuiCard() {__webpack_require__.e(/*! require.ensure | components/thorui-uni/lib/thorui/tui-card/tui-card */ "components/thorui-uni/lib/thorui/tui-card/tui-card").then((function () {return resolve(__webpack_require__(/*! ../../components/thorui-uni/lib/thorui/tui-card/tui-card */ 77));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  data: function data() {
+    return {
+      lifeList: [] };
+
+  },
+  components: {
+    tuiIcon: tuiIcon,
+    tuiCard: tuiCard },
+
+  onShow: function onShow() {
+    this.getLifeList();
+  },
+  computed: {},
+
+
+  methods: {
+    timeago: function timeago(dateTimeStamp) {
+      //dateTimeStamp是一个时间毫秒，注意时间戳是秒的形式，在这个毫秒的基础上除以1000，就是十位数的时间戳。13位数的都是时间毫秒。
+      var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+      var hour = minute * 60;
+      var day = hour * 24;
+      var week = day * 7;
+      var halfamonth = day * 15;
+      var month = day * 30;
+      var now = new Date().getTime(); //获取当前时间毫秒
+      console.log(now);
+      var diffValue = now - dateTimeStamp; //时间差
+      var result = '';
+      if (diffValue < 0) {
+        return;
+      }
+      var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+      var hourC = diffValue / hour;
+      var dayC = diffValue / day;
+      var weekC = diffValue / week;
+      var monthC = diffValue / month;
+      if (monthC >= 1 && monthC <= 3) {
+        result = ' ' + parseInt(monthC) + '月前';
+      } else if (weekC >= 1 && weekC <= 3) {
+        result = ' ' + parseInt(weekC) + '周前';
+      } else if (dayC >= 1 && dayC <= 6) {
+        result = ' ' + parseInt(dayC) + '天前';
+      } else if (hourC >= 1 && hourC <= 23) {
+        result = ' ' + parseInt(hourC) + '小时前';
+      } else if (minC >= 1 && minC <= 59) {
+        result = ' ' + parseInt(minC) + '分钟前';
+      } else if (diffValue >= 0 && diffValue <= minute) {
+        result = '刚刚';
+      } else {
+        var datetime = new Date();
+        datetime.setTime(dateTimeStamp);
+        var Nyear = datetime.getFullYear();
+        var Nmonth = datetime.getMonth() + 1 < 10 ? '0' + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+        var Ndate = datetime.getDate() < 10 ? '0' + datetime.getDate() : datetime.getDate();
+        var Nhour = datetime.getHours() < 10 ? '0' + datetime.getHours() : datetime.getHours();
+        var Nminute = datetime.getMinutes() < 10 ? '0' + datetime.getMinutes() : datetime.getMinutes();
+        var Nsecond = datetime.getSeconds() < 10 ? '0' + datetime.getSeconds() : datetime.getSeconds();
+        result = Nyear + '-' + Nmonth + '-' + Ndate;
+      }
+      return result;
+    },
+    getLifeList: function getLifeList() {var _this = this;
+      uniCloud.
+      callFunction({
+        name: 'getRecord',
+        data: {
+          limit: 10,
+          skip: 0 } }).
+
+
+      then(function (res) {
+        _this.lifeList = res.result.data;
+        console.log(111, _this.lifeList);
+      });
+    },
+    previewImage: function previewImage(data) {
+      uni.previewImage({
+        urls: data });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 26)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

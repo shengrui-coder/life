@@ -196,7 +196,7 @@ var BatchUpload = function (_super) {
       } });
 
   };
-  BatchUpload.prototype.previewImage = function (index) {
+  BatchUpload.prototype.previewImage = function () {
     uni.previewImage({
       urls: this.uploadImgPopList });
 
