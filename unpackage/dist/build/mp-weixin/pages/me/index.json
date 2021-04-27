@@ -1,8 +1,0 @@
-{
-  "backgroundColor": "#F5F5F5",
-  "usingComponents": {
-    "tui-list-view": "/components/thorui-uni/lib/thorui/tui-list-view/tui-list-view",
-    "tui-list-cell": "/components/thorui-uni/lib/thorui/tui-list-cell/tui-list-cell",
-    "tui-icon": "/components/thorui-uni/lib/thorui/tui-icon/tui-icon"
-  }
-}
